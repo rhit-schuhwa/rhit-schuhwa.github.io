@@ -7,10 +7,16 @@
     <title>Wesley Schuh's Portfolio</title>
     <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/main.css" />
-    <link rel="icon" href="images/favicon.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
 </head>
 
 <body id="portfolio">
+    <header>
+        <h1>Wesley Schuh</h1>
+    </header>
     <nav>
         <ul>
             <li><a href="index.html">About</a></li>
@@ -18,57 +24,39 @@
             <li><a href="resume.html">Resume</a></li>
         </ul>
     </nav>
+    <button class="topBtn" title="Go to top">Top</button>
     <main>
         <h1>Portfolio</h1>
+        <hr>
         <ul id="portfolioItems">
+            <!-- These will all have to be dummy links (except lightsout) because I cannot directly link the other three projects -->
             <li>
-                <h2><a href="#">Project Name</a></h2>
-                <img src="images/portfolio/project.png" alt="Project Name">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Duis at tellus at urna condimentum mattis pellentesque id. Pharetra pharetra
-                    massa massa ultricies mi quis hendrerit dolor magna.</p>
+                <h2><a href="https://docs.google.com/document/d/1RuMVBZ8OnfskYRSpoUkEUyG2IsMo4QT1mvrll79CU88/edit"
+                        target="_blank">Arcade Game Project</a></h2>
+                <img src="images/portfolio/arcade.png" alt="Arcade Game Project">
+                <p>Implemented a version of the retro arcade game <em>Joust</em> in Java. I worked with a team to
+                    implement graphics features including movement, enemy tracking, and collision detection.</p>
             </li>
             <li>
-                <h2><a href="#">Project Name</a></h2>
-                <img src="images/portfolio/project.png" alt="Project Name">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Duis at tellus at urna condimentum mattis pellentesque id. Pharetra pharetra
-                    massa massa ultricies mi quis hendrerit dolor magna.</p>
+                <h2><a href="https://moodle.rose-hulman.edu/mod/page/view.php?id=3624724" target="_blank">Editor
+                        Trees</a></h2>
+                <img src="images/portfolio/tree.png" alt="Editor Trees">
+                <p>Built a height-balanced "AVL tree" (really a balanced-tree implementation of Lists) in Java with a
+                    partner. The tree can handle addition and deletion of nodes, and perform single and double rotations
+                    if necessary.</p>
             </li>
             <li>
-                <h2><a href="#">Project Name</a></h2>
-                <img src="images/portfolio/project.png" alt="Project Name">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Duis at tellus at urna condimentum mattis pellentesque id. Pharetra pharetra
-                    massa massa ultricies mi quis hendrerit dolor magna.</p>
+                <h2><a href="https://en.wikipedia.org/wiki/Guitar_Hero" target="_blank">Guitar Hero</a></h2>
+                <img src="images/portfolio/guitar.png" alt="Guitar Hero">
+                <p>Constructed a version of the video game <em>Guitar Hero</em> playable on an FPGA board using Quartus
+                    and Verilog. The game uses a 7-segment display to simulate the notes falling on the screen.</p>
             </li>
             <li>
-                <h2><a href="#">Project Name</a></h2>
-                <img src="images/portfolio/project.png" alt="Project Name">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Duis at tellus at urna condimentum mattis pellentesque id. Pharetra pharetra
-                    massa massa ultricies mi quis hendrerit dolor magna.</p>
-            </li>
-            <li>
-                <h2><a href="#">Project Name</a></h2>
-                <img src="images/portfolio/project.png" alt="Project Name">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Duis at tellus at urna condimentum mattis pellentesque id. Pharetra pharetra
-                    massa massa ultricies mi quis hendrerit dolor magna.</p>
-            </li>
-            <li>
-                <h2><a href="#">Project Name</a></h2>
-                <img src="images/portfolio/project.png" alt="Project Name">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Duis at tellus at urna condimentum mattis pellentesque id. Pharetra pharetra
-                    massa massa ultricies mi quis hendrerit dolor magna.</p>
-            </li>
-            <li>
-                <h2><a href="#">Project Name</a></h2>
-                <img src="images/portfolio/project.png" alt="Project Name">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Duis at tellus at urna condimentum mattis pellentesque id. Pharetra pharetra
-                    massa massa ultricies mi quis hendrerit dolor magna.</p>
+                <h2><a href="https://schuhwa-lightsout.web.app" target="_blank">Linear Lights Out</a></h2>
+                <img src="images/portfolio/lights.png" alt="Linear Lights Out">
+                <p>Used HTML, CSS, and JavaScript to implement a simple version of the Lights Out game. The goal of the
+                    game is to get all the lights to match by pressing on the lights, inverting it and its neighbors.
+                </p>
             </li>
         </ul>
     </main>

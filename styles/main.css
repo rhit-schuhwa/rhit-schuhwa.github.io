@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Kanit&display=swap');
+
+:root {
+    --vertical-space: 2rem;
+    --horizontal-space: 3rem;
+
+    --light-color: 20, 97, 82;
+    --body-color: #B4CF66;
+    --heading-color: #FFEC5C;
+    --contrast-color: #FF5A33;
+}
+
+body {
+    background-image: repeating-linear-gradient(225deg, hsla(45,100%,71%,0.05) 0px, hsla(45,100%,71%,0.05) 1px,transparent 1px, transparent 11px,hsla(45,100%,71%,0.05) 11px, hsla(45,100%,71%,0.05) 12px,transparent 12px, transparent 32px),repeating-linear-gradient(180deg, hsla(45,100%,71%,0.05) 0px, hsla(45,100%,71%,0.05) 1px,transparent 1px, transparent 11px,hsla(45,100%,71%,0.05) 11px, hsla(45,100%,71%,0.05) 12px,transparent 12px, transparent 32px),repeating-linear-gradient(225deg, hsla(45,100%,71%,0.05) 0px, hsla(45,100%,71%,0.05) 1px,transparent 1px, transparent 11px,hsla(45,100%,71%,0.05) 11px, hsla(45,100%,71%,0.05) 12px,transparent 12px, transparent 32px),repeating-linear-gradient(315deg, hsla(45,100%,71%,0.05) 0px, hsla(45,100%,71%,0.05) 1px,transparent 1px, transparent 11px,hsla(45,100%,71%,0.05) 11px, hsla(45,100%,71%,0.05) 12px,transparent 12px, transparent 32px),linear-gradient(270deg, rgb(135, 90, 137),rgb(64, 32, 164));
+    color: var(--body-color);
+    display: grid;
+    font-family: 'Kanit', sans-serif;
+    font-size: 18px;
+    grid-template-areas: "head head"
+                         "nav nav"
+                         "main main"
+                         "foot foot";
+    grid-template-columns: auto 4fr;
+    grid-template-rows: auto auto 1fr auto;
+    line-height: 1.5;
+    max-width: 75em;
+}
+
+body > * {
+    padding-left: var(--horizontal-space);
+    padding-right: var(--horizontal-space);
+}
+
+body > header {
+    grid-area: head;
+    padding-top: var(--vertical-space);
+}
+
+header h1, footer h1 {
+    margin: 0;
+}
+
+body > nav {
+    grid-area: nav;
+}
+
+body > nav ul {
+    line-height: 2.4;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+body > nav ul li {
+    display: inline-block;
+    padding-right: 1em;
+}
+
+body > main {
+    grid-area: main;
+    max-width: 75em;
+}
+
+main {
+    background-color: rgba(var(--light-color), 0.55);
+}
+
+body > footer {
+    grid-area: foot;
+    max-width: 75vw;
+    padding-top: var(--vertical-space);
+}
+
+body#about img {
+    border-radius: 20px;
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.75);
+    height: 20em;
+    margin-bottom: var(--vertical-space);
+    margin-right: var(--horizontal-space);
+}
+
+body#portfolio ul#portfolioItems {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    list-style-type: none;
+    padding: 0;
+}
+
+body#portfolio ul#portfolioItems li img {
+    height: 250px;
+    max-width: 100%;
+}
+
+h1, h2, h3, h4 {
+    color: var(--heading-color);
+    font-family: 'ADLaM Display', cursive;
+    line-height: 1.2;
+}
+
+p, dd {
+    max-width: 75em;
+}
+
+a {
+    color: var(--body-color);
+    text-decoration-color: var(--contrast-color);
+}
+
+a:hover {
+    color: var(--contrast-color);
+}
+
+hr {
+    background-color: var(--contrast-color);
+    border: none;
+    height: 1px;
+}
+
+.right {
+    float: right;
+}
+
+.topBtn {
+    background-color: rgb(var(--light-color));
+    border-radius: 10px;
+    bottom: 20px;
+    color: var(--body-color);
+    cursor: pointer;
+    display: none;
+    padding: 10px;
+    position: fixed;
+    right: 30px;
+}
+  
+.topBtn:hover {
+    background-color: var(--contrast-color);
+    color: var(--heading-color);
+}
+
+@media screen and (min-width: 25em) {
+    body {
+        grid-template-areas: "head nav"
+                             "main main"
+                             "foot foot";
+        grid-template-rows: auto 1fr auto;
+    }
+
+    body > nav ul {
+        float: right;
+        line-height: 6;
+    }
+
+    body#about img {
+        display: inline;
+        float: left;
+    }
+
+    body#portfolio ul#portfolioItems li {
+        flex-basis: 48%;
+        padding-right: 2%;
+    }
+}
+
+::selection {
+    color: #4AF626;
+    background-color: black;
+}
