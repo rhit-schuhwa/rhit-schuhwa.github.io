@@ -138,7 +138,7 @@ hr {
     color: var(--heading-color);
 }
 
-@media screen and (min-width: 81em) {
+@media screen and (min-width: 30em) {
     body {
         grid-template-areas: "head nav"
                              "main main"
