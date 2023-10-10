@@ -67,7 +67,7 @@ main {
 
 body > footer {
     grid-area: foot;
-    max-width: 75vw;
+    max-width: 70vw;
     padding-top: var(--vertical-space);
 }
 
